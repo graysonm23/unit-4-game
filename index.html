@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystal Collector</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" style="background-color: purple; color: white;">
+        <div class="container">
+          <h1 class="text-center"><strong>Crystal Collector</strong></h1>
+        </div>
+      </div>
+
+      <img
+        src="assets/images/cool_image.png"
+        style="margin: 15px; position: fixed; top: 150px; left: 525px;"
+      />
+
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body card text-white bg-primary">
+              <h4 class="card-title" style="text-align: center">
+                Instructions
+              </h4>
+            </div>
+            <p class="card-text">
+              <small>
+                You will be given a random number at the start of the game.
+                There are four crystals below. By clicking a crystal you will
+                add a specific ammount of points to your total score. You win
+                the game by matching your total score to a random number, you
+                lose the game if your total score goes above the random number.
+                The value of each crystal is hidden from you until you click on
+                it. Each time when the game starts, the game will change the
+                values of each crystal.</small
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin: 50px 150px;">
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-body card text-white bg-primary">
+            <h4 class="card-title" style="text-align: center">
+              Target Score
+            </h4>
+          </div>
+          <p
+            class="card-text"
+            style="text-align: center; padding: 20px"
+            id="targetScore"
+          >
+            <strong></strong>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-body card text-white bg-primary">
+            <h4 class="card-title" style="text-align: center">
+              Your Score
+            </h4>
+          </div>
+          <p
+            class="card-text"
+            style="text-align: center; padding: 20px"
+            id="yourScore"
+          >
+            <strong></strong>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body card text-white bg-primary">
+            <h4 class="card-title" style="text-align: center">
+              Crystal Selection
+            </h4>
+          </div>
+          <div
+            class="container-images"
+            style="text-align: center; padding: 20px"
+          >
+            <img
+              style="height: 60px; width: 60px;"
+              src="assets/images/blue.png"
+              id="blue"
+            />
+            <img
+              style="height: 60px; width: 60px;"
+              src="assets/images/purple.jpg"
+              id="purple"
+            />
+            <img
+              style="height: 60px; width: 60px;"
+              src="assets/images/white.png"
+              id="white"
+            />
+            <img
+              style="height: 60px; width: 60px;"
+              src="assets/images/green.png"
+              id="green"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin: 0px 150px;">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body card text-white bg-primary">
+            <h4 class="card-title" style="text-align: center">
+              Win Count
+            </h4>
+          </div>
+          <p
+            class="card-text"
+            style="text-align: center; padding: 20px"
+            id="winCount"
+          >
+            <strong>0</strong>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body card text-white bg-primary">
+            <h4 class="card-title" style="text-align: center">
+              Loss Count
+            </h4>
+          </div>
+          <p
+            class="card-text"
+            style="text-align: center; padding: 20px;"
+            id="lossCount"
+          >
+            <strong>0</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
